@@ -9,7 +9,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-guests-solaris11"
   #spec.version       = VagrantPlugins::SOLARIS11::VERSION
-  spec.version       = "0.0.1.dev"
+  #spec.version       = "0.0.2.dev"
+  spec.version       = File.read('VERSION')
   #spec.platform      = Gem::Platform::RUBY
   spec.authors       = "Jan Thomas Moldung"
   spec.email         = "janth@moldung.no"
@@ -24,6 +25,7 @@ Gem::Specification.new do |spec|
   #spec.add_runtime_dependency "fog", "~> 1.10.0"
 
   spec.add_development_dependency "bundler"
+  spec.add_development_dependency "jeweler"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec-core"
   spec.add_development_dependency "rspec-expectations"
