@@ -8,7 +8,11 @@ guest to Vagrant, allowing Vagrant to control Oracle Solaris 11.
 **NOTE:** This plugin requires Vagrant 1.2+,
 
 ## Installation
+with vagrant plugin from http://rubygems.org/
 
+```bash
+vagrant plugin install vagrant-guests-solaris11
+```
    $ vagrant plugin install vagrant-guests-solaris11
 
 ## Features
@@ -30,26 +34,35 @@ To work on the `vagrant-guests-solaris11` plugin, clone [this repository
 out](https://github.com/janth/vagrant-guests-solaris11), and use
 [Bundler](http://gembundler.com) to get the dependencies:
 
-```
-$ bundle
+```bash
+bundle
 ```
 
 Once you have the dependencies, verify the unit tests pass with `rake`:
 
+```bash
+bundle exec rake 
 ```
-$ bundle exec rake
+
+Other rake commands:
+```bash
+bundle exec rake --tasks
+bundle exec rake --trace build
+bundle exec rake --trace install
+bundle exec rake --trace release
 ```
+
 
 If those pass, you're ready to start developing the plugin. You can test
 the plugin without installing it into your Vagrant environment by just
 creating a `Vagrantfile` in the top level of this directory (it is gitignored)
 and add the following line to your `Vagrantfile` 
 ```ruby
-Vagrant.require_plugin "vagrant-aws"
+Vagrant.require_plugin "vagrant-guests-solaris11"
 ```
 Use bundler to execute Vagrant:
-```
-$ bundle exec vagrant up --provider=aws
+```bash
+bundle exec vagrant up <vagranthost>
 ```
 
 ### Changelog

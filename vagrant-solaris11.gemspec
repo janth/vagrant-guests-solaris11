@@ -1,18 +1,19 @@
 # vim: coding: utf-8:shiftwidth=2
 
 #$:.unshift File.expand_path("../lib", __FILE__)
-#require "vagrant-solaris11/version"
+#require "vagrant-guests-solaris11/version"
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-guests-solaris11"
-  spec.version       = VagrantPlugins::SOLARIS11::VERSION
+  #spec.version       = VagrantPlugins::SOLARIS11::VERSION
+  spec.version       = "0.0.1.dev"
   #spec.platform      = Gem::Platform::RUBY
   spec.authors       = "Jan Thomas Moldung"
   spec.email         = "janth@moldung.no"
-  #spec.homepage      = "http://www.vagrantup.com"
+  #spec.homepage      = "https://github.com/janth/vagrant-guests-solaris11"
   spec.summary       = "Enables Vagrant to manage Oracle Solaris 11 guests."
   spec.description   = "Enables Vagrant to manage Oracle Solaris 11 guests."
   spec.license       = "MIT"
