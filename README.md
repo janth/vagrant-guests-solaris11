@@ -1,3 +1,4 @@
+<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>G
 # Vagrant Oracle Solaris 11 guest Provider
 
 Vagrant >= 1.x has a built-in Oracle Solaris plugin, but the plugin lacks the ability to set hostname and confgure network on Oracle Solaris 11+
@@ -13,7 +14,6 @@ with vagrant plugin from http://rubygems.org/
 ```bash
 vagrant plugin install vagrant-guests-solaris11
 ```
-   $ vagrant plugin install vagrant-guests-solaris11
 
 ## Features
 
@@ -67,5 +67,25 @@ bundle exec vagrant up <vagranthost>
 
 ### Changelog
 
+## 0.0.1 (2013-08-25)
+
+ * Initial release
 
 ### Fork
+<!--
+https://github.com/jamesflorentino/fork-ribbons/blob/master/README.md
+https://github.com/aral/fork-me-on-github-retina-ribbons/blob/master/readme.md
+https://github.com/simonwhitaker/github-fork-ribbon-css
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+-->
+
+<a href="https://github.com/"><img style="position: absolute; top: 0; right: 30px; border: 0;" src="https://github.com/jamesflorentino/fork-ribbons/raw/master/ribbons/green-white.png" alt="Fork me on GitHub"></a>
+
+    <!-- BOTTOM RIGHT RIBBON: START COPYING HERE -->
+    <div class="github-fork-ribbon-wrapper right-bottom">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">Fork me on GitHub</a>
+        </div>
+    </div>
