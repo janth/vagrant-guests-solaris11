@@ -3,6 +3,7 @@ require 'bundler/setup'
 # For gem creation and bundling
 require "bundler/gem_tasks"
 require 'rspec/core/rake_task'
+require 'rake/clean'
 
 # Immediately sync all stdout so that tools like buildbot can
 # immediately load in the output.

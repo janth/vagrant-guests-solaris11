@@ -16,7 +16,7 @@ describe VagrantPlugins::GuestSolaris11::Plugin do
       :halt               => VagrantPlugins::GuestSolaris11::Cap::Halt,
       :change_host_name   => VagrantPlugins::GuestSolaris11::Cap::ChangeHostName,
       :configure_networks => VagrantPlugins::GuestSolaris11::Cap::ConfigureNetworks,
-      :mount_nfs_folder   => VagrantPlugins::GuestSolaris11::Cap::MountVirtualBoxSharedFolder,
+      :mount_virtualbox_shared_folder   => VagrantPlugins::GuestSolaris11::Cap::MountVirtualBoxSharedFolder,
       #:mount_nfs_folder   => VagrantPlugins::GuestSolaris11::Cap::MountNFSFolder,
     }.each do |cap, cls|
       it "should be capable of #{cap} with #{os}" do

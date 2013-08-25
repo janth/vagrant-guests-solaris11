@@ -8,7 +8,7 @@ module VagrantPlugins
   module GuestSolaris11
     class Guest < Vagrant.plugin("2", :guest)
       def detect?(machine)
-        machine.communicate.test("uname -s | grep SunOS")
+        machine.communicate.test('[ "$(uname -s)" = "SunOS" ]')
       end
     end
   end
