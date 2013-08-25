@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   #spec.platform      = Gem::Platform::RUBY
   spec.authors       = "Jan Thomas Moldung"
   spec.email         = "janth@moldung.no"
-  #spec.homepage      = "https://github.com/janth/vagrant-guests-solaris11"
+  spec.homepage      = "https://github.com/janth/vagrant-guests-solaris11"
   spec.summary       = "Enables Vagrant to manage Oracle Solaris 11 guests."
   spec.description   = "Enables Vagrant to manage Oracle Solaris 11 guests."
   spec.license       = "MIT"

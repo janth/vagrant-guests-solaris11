@@ -1,5 +1,5 @@
-<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>G
-# Vagrant Oracle Solaris 11 guest Provider
+
+## Vagrant Oracle Solaris 11 guest Provider
 
 Vagrant >= 1.x has a built-in Oracle Solaris plugin, but the plugin lacks the ability to set hostname and confgure network on Oracle Solaris 11+
 
@@ -8,18 +8,18 @@ guest to Vagrant, allowing Vagrant to control Oracle Solaris 11.
 
 **NOTE:** This plugin requires Vagrant 1.2+,
 
-## Installation
+### Installation
 with vagrant plugin from http://rubygems.org/
 
 ```bash
 vagrant plugin install vagrant-guests-solaris11
 ```
 
-## Features
+### Features
 
 * Set hostname and configure network in Oracle Solaris 11.
 
-## Usage
+### Usage
 Add this line to your Vagrantfile:
 
 ```ruby
@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
    config.vm.guest = :solaris11
 ```
 
-## Development
+### Development
 
 To work on the `vagrant-guests-solaris11` plugin, clone [this repository
 out](https://github.com/janth/vagrant-guests-solaris11), and use
@@ -64,28 +64,37 @@ Use bundler to execute Vagrant:
 ```bash
 bundle exec vagrant up <vagranthost>
 ```
+### Cleanup
+
+```bash
+bundle exec rake clobber
+```
 
 ### Changelog
 
-## 0.0.1 (2013-08-25)
+##### 0.0.1 (2013-08-25)
 
  * Initial release
 
+### Similar projects
+
+* [vagrant-guests-openbsd](https://github.com/nabeken/vagrant-guests-openbsd.git)
+
 ### Fork
+
 <!--
 https://github.com/jamesflorentino/fork-ribbons/blob/master/README.md
 https://github.com/aral/fork-me-on-github-retina-ribbons/blob/master/readme.md
 https://github.com/simonwhitaker/github-fork-ribbon-css
-
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
 -->
 
-<a href="https://github.com/"><img style="position: absolute; top: 0; right: 30px; border: 0;" src="https://github.com/jamesflorentino/fork-ribbons/raw/master/ribbons/green-white.png" alt="Fork me on GitHub"></a>
+   <a href="https://github.com/janth/vagrant-guests-solarsi11/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+   <a href="https://github.com/janth/vagrant-guests-solaris11"><img style="position: absolute; top: 0; right: 30px; border: 0;" src="https://github.com/jamesflorentino/fork-ribbons/raw/master/ribbons/green-white.png" alt="Fork me on GitHub"></a>
 
-    <!-- BOTTOM RIGHT RIBBON: START COPYING HERE -->
-    <div class="github-fork-ribbon-wrapper right-bottom">
-        <div class="github-fork-ribbon">
-            <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">Fork me on GitHub</a>
-        </div>
-    </div>
+   <!-- BOTTOM RIGHT RIBBON: START COPYING HERE -->
+   <div class="github-fork-ribbon-wrapper right-bottom">
+   <div class="github-fork-ribbon">
+   <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">Fork me on GitHub</a>
+   </div>
+   </div>
